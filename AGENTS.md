@@ -8,6 +8,7 @@ A knowledge base your AI reads first, so you stop explaining your context in eve
 - `wiki/` holds the articles the AI writes from `raw/`. One subfolder per topic, one article per concept. `wiki/index.md` lists every article. `wiki/log.md` records every ingest, query and lint.
 - `outputs/` holds what the wiki produces: answers, posts, one-pagers, slides.
 - `.agents/skills/` holds the skills. A skill is a `SKILL.md` that tells the AI how to do one job. Read a skill's file before doing its job.
+- `skills/` is a visible mirror for Obsidian, which hides dot folders. It holds one pointer note per skill. Agents read `.agents/skills/`, not this folder.
 
 ## Skills
 
