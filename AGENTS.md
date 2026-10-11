@@ -7,14 +7,14 @@ A knowledge base your AI reads first, so you stop explaining your context in eve
 - `raw/` holds source material: clipped web pages, pasted text, documents. Never edit a file in here. One subfolder per topic.
 - `wiki/` holds the articles the AI writes from `raw/`. One subfolder per topic, one article per concept. `wiki/index.md` lists every article. `wiki/log.md` records every ingest, query and lint.
 - `outputs/` holds what the wiki produces: answers, posts, one-pagers, slides.
-- `copilot/skills/` holds the skills. A skill is a `SKILL.md` that tells the AI how to do one job. Read a skill's file before doing its job.
+- `.agents/skills/` holds the skills. A skill is a `SKILL.md` that tells the AI how to do one job. Read a skill's file before doing its job.
 
 ## Skills
 
-- `copilot/skills/karpathy-llm-wiki/SKILL.md`: ingest a source into `raw/` and compile it into `wiki/`; answer a question from the wiki; lint the wiki for contradictions, orphans and stale claims. Use it for "add this to the wiki", "what do I know about", "check the wiki".
-- `copilot/skills/create-context-profile/SKILL.md`: interview the user, or read a pasted LinkedIn profile, and write who they are into `wiki/profile/`.
-- `copilot/skills/create-business-context-profile/SKILL.md`: the same for their company or client.
-- `copilot/skills/write-from-wiki/SKILL.md`: write one piece in the user's voice from the profile and the wiki into `outputs/`.
+- `.agents/skills/karpathy-llm-wiki/SKILL.md`: ingest a source into `raw/` and compile it into `wiki/`; answer a question from the wiki; lint the wiki for contradictions, orphans and stale claims. Use it for "add this to the wiki", "what do I know about", "check the wiki".
+- `.agents/skills/create-context-profile/SKILL.md`: interview the user, or read a pasted LinkedIn profile, and write who they are into `wiki/profile/`.
+- `.agents/skills/create-business-context-profile/SKILL.md`: the same for their company or client.
+- `.agents/skills/write-from-wiki/SKILL.md`: write one piece in the user's voice from the profile and the wiki into `outputs/`.
 
 ## Rules
 
