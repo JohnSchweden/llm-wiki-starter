@@ -130,6 +130,30 @@ When the user explicitly asks to archive or save the answer to the wiki:
 
 ---
 
+## Write
+
+Write one piece in the user's voice from the wiki into `outputs/`. The wiki takes in; this operation gives back: a post, one-pager, email, memo or summary. Examples of triggers:
+- "Write a post about X"
+- "Make a one-pager from what the wiki knows about Y"
+- "Draft an email on Z"
+
+### Steps
+
+1. Read the profile first. Open `wiki/profile/` and its Standing instructions and Voice sections. If there is no profile, say so and offer to run `create-context-profile`. Without a profile the piece is in nobody's voice.
+2. Read the sources. Open `wiki/index.md`, pick the articles the piece needs, read them. Use only what the wiki says. If the wiki does not cover a part of the topic, say which part is missing. Do not fill it from memory.
+3. Agree the shape. One line back to the user: format, length, audience, the one point the piece makes. Wait for a yes.
+4. Write in the user's language and register. Their words over yours. Short sentences. One idea per paragraph. No filler openers, no closing summary, no lists of three for rhythm, no em dashes.
+5. Show the draft in the conversation, then save it to `outputs/YYYY-MM-DD-<slug>.md`. First line: the title. Last line: `Sources:` with the wiki articles used, as project-root-relative paths. The user edits; the AI does not publish.
+6. Offer the loop. If the piece contains a new claim or a decision worth keeping, offer to ingest it from `outputs/` as a source. Output becomes source.
+7. Append to `wiki/log.md`:
+   ```
+   ## [YYYY-MM-DD] write | <title> -> outputs/<file>
+   ```
+
+Write never changes `wiki/`. A claim that is not in the wiki does not go in the piece.
+
+---
+
 ## Lint
 
 Quality checks on the wiki. Two categories with different authority levels.
@@ -184,4 +208,4 @@ Append to `wiki/log.md`:
 - wiki/ supports one level of topic subdirectories only. No deeper nesting.
 - Today's date for log entries, Collected dates, and Archived dates. Updated dates reflect when the article's knowledge content last changed. Published dates come from the source (use `Unknown` when unavailable).
 - Inside wiki/ files, all markdown links use paths relative to the current file. In conversation output, use project-root-relative paths (e.g., `wiki/topic/article.md`).
-- Ingest updates both `wiki/index.md` and `wiki/log.md`. Archive (from Query) updates both. Lint updates `wiki/log.md` (and `wiki/index.md` only when auto-fixing index entries). Plain queries do not write any files.
+- Ingest updates both `wiki/index.md` and `wiki/log.md`. Archive (from Query) updates both. Lint updates `wiki/log.md` (and `wiki/index.md` only when auto-fixing index entries). Plain queries do not write any files. Write saves to `outputs/` and updates `wiki/log.md` only.

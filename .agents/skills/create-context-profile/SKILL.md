@@ -10,13 +10,13 @@ One page in `wiki/profile/` that says who the user is, what they work on, and ho
 ## Two ways in
 
 1. **Pasted text.** The user pastes a LinkedIn profile, a CV, an about page, or a bio. Save it unchanged to `raw/profile/<first-name>-linkedin.md` with the raw header (Source, Collected, Published) from `../karpathy-llm-wiki/references/raw-template.md`. Then compile.
-2. **Interview.** Nothing to paste. Ask the questions below, one block at a time, in the user's language. Save the answers as `raw/profile/<first-name>-interview.md` with the same header, Source: "interview". Then compile.
+2. **Interview.** Nothing to paste. Ask the questions below, one at a time, in the user's language. Save the answers as `raw/profile/<first-name>-interview.md` with the same header, Source: "interview". Then compile.
 
 If both exist, use both.
 
 ## Interview blocks
 
-Ask one block at a time. Three to five questions per block. Skip anything the pasted text already answers. Stop when the user says it is enough.
+Ask one question at a time. Wait for the answer before the next question. Skip what the pasted text already answers. Stop when the user says it is enough.
 
 1. **Who.** Name, role, company or clients, location, languages. How they got here in two sentences.
 2. **Work.** What they do all week. The two or three things they are responsible for. What they are working on right now.

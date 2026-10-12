@@ -12,10 +12,11 @@ A knowledge base your AI reads first, so you stop explaining your context in eve
 
 ## Skills
 
-- `.agents/skills/karpathy-llm-wiki/SKILL.md`: ingest a source into `raw/` and compile it into `wiki/`; answer a question from the wiki; lint the wiki for contradictions, orphans and stale claims. Use it for "add this to the wiki", "what do I know about", "check the wiki".
+- `.agents/skills/karpathy-llm-wiki/SKILL.md`: ingest a source into `raw/` and compile it into `wiki/`; answer a question from the wiki; lint the wiki for contradictions, orphans and stale claims; write one piece in the user's voice from the profile and the wiki into `outputs/`. Use it for "add this to the wiki", "what do I know about", "check the wiki", "write a post about".
 - `.agents/skills/create-context-profile/SKILL.md`: interview the user, or read a pasted LinkedIn profile, and write who they are into `wiki/profile/`.
 - `.agents/skills/create-business-context-profile/SKILL.md`: the same for their company or client.
-- `.agents/skills/write-from-wiki/SKILL.md`: write one piece in the user's voice from the profile and the wiki into `outputs/`.
+- `.agents/skills/create-design-guide/SKILL.md`: read a pasted brand guide or deck, or interview the user, and write how their work looks into `wiki/profile/design-guide.md`.
+- `.agents/skills/create-voice-guide/SKILL.md`: read posts the user wrote, or interview them, and write how they sound into `wiki/profile/voice-guide.md`.
 
 ## Rules
 
@@ -23,6 +24,16 @@ A knowledge base your AI reads first, so you stop explaining your context in eve
 - Every ingest updates the article, `wiki/index.md` and `wiki/log.md`.
 - Ask before deleting anything.
 - Write in the user's language. Keep the user's wording when you quote them.
+
+## Writing
+
+When the user asks for a post, one-pager, email, memo or summary:
+
+- Read `wiki/profile/` first (profile, voice guide, design guide for decks). No profile, no voice: say so and offer `create-context-profile`.
+- The wiki is the only source. Say what it lacks instead of filling the gap from memory.
+- Agree the shape in one line (format, length, audience, the one point) before writing.
+- Save to `outputs/YYYY-MM-DD-<slug>.md`, title first, `Sources:` last. Show the draft; the user publishes.
+- Offer to ingest the piece back into the wiki if it holds a new claim or decision. Output becomes source.
 
 ## Starter content
 

@@ -10,13 +10,13 @@ One page per company in `wiki/business/`. It covers the company, the user's role
 ## Two ways in
 
 1. **Pasted material.** A website text, a pitch, an org chart, OKRs, a role description. Save each unchanged to `raw/business/<company>-<what>.md` with the raw header from `../karpathy-llm-wiki/references/raw-template.md`. Then compile.
-2. **Interview.** Ask the blocks below, one at a time, in the user's language. Save the answers to `raw/business/<company>-interview.md`. Then compile.
+2. **Interview.** Ask the questions below, one at a time, in the user's language. Save the answers to `raw/business/<company>-interview.md`. Then compile.
 
 A client gets its own page, same procedure, same folder.
 
 ## Interview blocks
 
-One block at a time, three to five questions each. Skip what the material already answers. Check each block with the user before moving on.
+Ask one question at a time. Wait for the answer before the next question. Skip what the pasted text already answers. Check each block with the user before moving on.
 
 1. **Company.** Name, what it sells, to whom, size, where. What makes it different in one sentence. Stage: starting, growing, steady.
 2. **Role.** The user's title and what the title means in practice. Who they report to. What they decide alone, what needs sign-off.
