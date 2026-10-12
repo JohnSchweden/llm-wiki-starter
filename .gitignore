@@ -4,3 +4,6 @@
 .obsidian/plugins/copilot/data.json
 copilot/copilot-conversations/
 copilot/memory/
+copilot/
+.claude/
+CLAUDE.md
