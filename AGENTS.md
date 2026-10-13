@@ -17,7 +17,7 @@ A knowledge base your AI reads first, so you stop explaining your context in eve
 - `.agents/skills/create-business-context-profile/SKILL.md`: the same for their company or client.
 - `.agents/skills/create-design-guide/SKILL.md`: read a pasted brand guide or deck, or interview the user, and write how their work looks into `wiki/profile/design-guide.md`.
 - `.agents/skills/create-voice-guide/SKILL.md`: read posts the user wrote, or interview them, and write how they sound into `wiki/profile/voice-guide.md`.
-- `.agents/skills/make-slide/SKILL.md`: build one PowerPoint slide from an agreed plan, with no installs. Use it for "build the slide", "make the PowerPoint".
+- `.agents/skills/make-slide/SKILL.md`: plan a PowerPoint deck with the user (framework and slide count included), then build it, any number of slides, each laid out from `wiki/profile/design-guide.md`, with no installs. Use it for "plan a deck", "build the slides", "make the PowerPoint".
 
 ## Rules
 

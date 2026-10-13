@@ -9,6 +9,6 @@ The real skills live in `.agents/skills/`, one folder per skill with a `SKILL.md
 | [[create-business-context-profile]] | `.agents/skills/create-business-context-profile/SKILL.md` | your company or client, into `wiki/business/` |
 | [[create-design-guide]] | `.agents/skills/create-design-guide/SKILL.md` | how you design, into `wiki/profile/design-guide.md` |
 | [[create-voice-guide]] | `.agents/skills/create-voice-guide/SKILL.md` | how you speak, into `wiki/profile/voice-guide.md` |
-| [[make-slide]] | `.agents/skills/make-slide/SKILL.md` | one PowerPoint slide from an agreed plan, into `outputs/` |
+| [[make-slide]] | `.agents/skills/make-slide/SKILL.md` | plans a PowerPoint deck with you, then builds it in your design into `outputs/` |
 
 Also hidden in Obsidian: `.obsidian/` (settings and the Copilot plugin).

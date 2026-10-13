@@ -2,6 +2,6 @@
 
 Pointer only. Real skill: `.agents/skills/make-slide/SKILL.md`.
 
-**Job:** turn an agreed plan into one PowerPoint slide in `outputs/`, then open it. No installs: the AI fills a ready-made slide template and zips it with tools every Mac and Windows laptop already has.
+**Job:** turn an agreed plan into a PowerPoint deck in `outputs/`, then open it. No template: the AI lays out every slide from your design guide, writes the file by hand, zips it with tools every Mac and Windows laptop already has, and looks at each slide before it hands it over.
 
-**Say:** "build the slide", "make the PowerPoint". Ask for a plan first and say yes to it.
+**Say:** switch the chat to plan mode, then "plan a PowerPoint deck from my wiki". Read the plan, change it until it is right, approve it, and the AI builds the deck.
