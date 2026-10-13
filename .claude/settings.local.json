@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(sort:*)",
+      "Bash(wc:*)",
+      "Bash(echo:*)",
+      "Bash(printf:*)",
+      "Bash(sed:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(zip:*)",
+      "Bash(unzip:*)",
+      "Bash(xmllint:*)",
+      "Bash(trash:*)",
+      "Bash(open:*)",
+      "Bash(date:*)"
+    ],
+    "additionalDirectories": [
+      "/Library/Fonts",
+      "~/Library/Fonts",
+      "/System/Library/Fonts"
+    ]
+  }
+}
